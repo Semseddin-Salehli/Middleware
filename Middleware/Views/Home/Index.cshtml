@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container bg-primary text-white p-4 rounded d-flex justify-content-between flex-column gap-4">
+    <label for="someText">Please enter something..</label>
+    <form asp-action="Index" method="POST">
+        <input type="text" name="text" value="" />
+        <button type="submit" name="submit" class="btn btn-success" > Submit </button>
+    </form>
+</div>
